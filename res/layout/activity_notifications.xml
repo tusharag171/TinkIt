@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.puddlz.Notifications"
+    tools:ignore="MergeRootFrame"
+  android:background="@drawable/cover_f"
+     >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="2dp"
+        android:divider="@color/app_green"
+        android:dividerHeight="1dp"
+       
+        >
+
+    </ListView>
+    
+     <TextView
+     android:id="@+id/aletrs_empty"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="112dp"
+     android:gravity="center"
+     android:text="No Alerts to display."
+     android:visibility="gone"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="@color/app_white"
+     android:textStyle="bold"
+     android:typeface="serif" />
+
+   <com.puddlz.ProgressWheel
+        android:id="@+id/progressBar1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/app_white"
+        wheel:matProg_progressIndeterminate="true" />
+</RelativeLayout>

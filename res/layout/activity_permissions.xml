@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.puddlz.Permissions$PlaceholderFragment"
+    android:background="@drawable/cover_f" >
+
+    <Button
+        android:id="@+id/continu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_custom2"
+            android:padding="0dp"
+            android:layout_alignParentBottom="true"
+            android:text="Continue" 
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+ <Button
+        android:id="@+id/fetch_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_custom2"
+            android:padding="0dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Fetch Permissions" />
+
+ <TextView
+     android:id="@+id/fb_perm_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="112dp"
+     android:gravity="center"
+     android:text="Oops! Puddlz requires Facebook permissions to continue. Your information is secure with us. Please provide remaining permissions to continue "
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="@color/app_white"
+     android:textStyle="bold"
+     android:typeface="serif" />
+
+</RelativeLayout>

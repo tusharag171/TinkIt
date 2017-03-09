@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+      <ImageView
+        android:id="@+id/bloglist"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+      
+      <TextView
+        android:id="@+id/date_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_white"
+        android:contentDescription="Date"
+        android:paddingBottom="3dp"
+        android:paddingRight="6dp"
+        android:textSize="12sp"
+                 />
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/bloglist"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:text="User"
+        android:textSize="18sp"  />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_white"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/bloglist"     
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:layout_marginBottom="10dp"
+        android:padding="0dp"
+        android:text="ques"
+        android:textSize="16sp" />
+    
+        <ImageView
+        android:id="@+id/loc_image"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textViewx2"
+        android:contentDescription="location"
+        android:paddingBottom="1dp"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_place"
+         />
+    
+    
+</RelativeLayout>

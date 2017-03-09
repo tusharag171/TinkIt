@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_launcher" />
+    
+   
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ff0000"
+        android:textSize="14sp"
+         />
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    
+        <LinearLayout
+        android:id="@+id/linearlayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+    
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+    
+     <ImageView
+        android:id="@+id/loc_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="location"
+        android:paddingBottom="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_place"
+         />
+     
+     <TextView
+        android:id="@+id/loc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="#ff0000"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+     xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover_f"
+    android:orientation="vertical"
+     >
+     
+     <TextView
+     android:id="@+id/feed_empty"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="112dp"
+     android:gravity="center"
+     android:text="No posts to display.&#xA; Ask a question now or browse through our Blog.&#xA; OR &#xA;"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="@color/app_white"
+     android:textStyle="bold"
+     android:visibility="gone"
+     android:typeface="serif" />
+     
+      
+
+<android.support.v4.widget.SwipeRefreshLayout
+android:id="@+id/swipeRefreshLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true" >
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/text_top"
+        android:clipToPadding="false"
+        android:paddingBottom="42dp"
+        android:divider="@color/app_green"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"       
+         >
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+      <com.puddlz.ProgressWheel
+        android:id="@+id/text_top"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/app_white"
+        wheel:matProg_progressIndeterminate="true" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/fetch_permissions"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_custom4"
+            android:onClick="ask"
+            android:padding="0dp"
+            android:text="Ask"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="serif" >
+
+        </Button>
+        
+            <Button
+            android:id="@+id/blog"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_custom4"
+            android:onClick="blog"
+            android:padding="0dp"
+            android:text="Blogs"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="serif" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/button_custom4"
+            android:onClick="notification"
+            android:padding="0dp"
+            android:text="Alerts"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>
